@@ -1096,7 +1096,7 @@ async function drawWeatherForecastWidget(){
                     sunrise = new Date(data.today.sun.rise).getTime(),
                     sunset = new Date(data.today.sun.set).getTime();
 
-                if (currentTime >= sunrise && currentTime < sunset){ // Dawn or day
+                if (currentTime >= sunrise || currentTime < sunset){ // Dawn or day
                     icon.classList.add("wi", "wi-" + weather_icons[data.today.day.icon]);
                 } else if (currentTime >= sunset) { // night
                     icon.classList.add("wi", "wi-" + weather_icons[data.today.night.icon]);
