@@ -1,0 +1,644 @@
+:root {
+    /* SIDE BAR */
+    --sidebgOpacity: 0;
+    --sidebgColor: rgba(255, 255, 255, var(--sidebgOpacity));
+    --sidebgFilter: blur(10px);
+    --sideBorderWidth: 1px;
+    --sideBorderRadius: 3px;
+    --sideBorderColor: rgb(94, 94, 94);
+    --dateLeft: 0px;
+    --dateBottom: 0px;
+    --dateRotation: 0deg;
+    --dateDisplay: block;
+    --calendarLeft: 0px;
+    --calendarBottom: 0px;
+    --calendarRotation: 0deg;
+    --calendarDisplay: block;
+    --timeLeft: 0px;
+    --timeBottom: 0px;
+    --timeRotation: 0deg;
+    --timeDisplay: block;
+    --weatherLeft: 0px;
+    --weatherBottom: 0px;
+    --weatherRotation: 0deg;
+    --WeatherDisplay: block;
+    --scheduleLeft: 0px;
+    --schedulerBottom: 0px;
+    --scheduleRotation: 0deg;
+    --scheduleDisplay: table;
+    --scheduleActive: 0;
+    --notesDisplay: block;
+    --notesActive: 0;
+    --scheduleNotesSeparator: calc(var(--scheduleActive) * var(--notesActive) * 20px);
+
+    /* GENERAL SETTINGS */
+    --font2: rgb(255, 0, 0);
+    --font1: rgb(187, 187, 187);
+    --bgFilter: 0;
+    --bgColor: rgb(38, 38, 37);
+    --bgImage: rgb(0, 0, 0, 0);
+    --bgSize: contain;
+    --schemeColor: rgb(255, 0, 0);
+    --hueRotation: 0deg;
+    --hueSaturation: 100%;
+    --hueBrightness: 100%;
+    --hueContrast: 100%;
+
+    /* CHARACTER */
+    --charLeft: 0%;
+    --charSize: auto 90%;
+    --charBottom: 2%;
+    --charShadowDisplay: block;
+    --charShadowMargin: -500vw;
+    --charInvert: scaleX(1);
+    --charImage: url('./assets/Asuka.png');
+    --charShadowOpacity: 0.15;
+    --charShadowLeft: 0%;
+    --charShadowBottom: 0%;
+    --charShadowColor: rgba(0, 0, 0, var(--charShadowOpacity));
+    --charShadowDrop: drop-shadow(500vw 0px var(--charShadowColor));
+
+    /* VISUALIZER */
+    --visualizerDisplay: flex;
+    --visualizerX: 0%;
+    --visualizerY: 40px;
+    --visualizerRotation: rotate(0deg) scaleY(-1);
+
+    /* MEDIA */
+    --mediaDisplay: block;
+    --mediaX: 0%;
+    --mediaY: 0%;
+    --mediaRotation: rotate(0deg);
+
+    /* PARALLAX ELEMENTS */
+    --parallaxBg1Opacity: 1;
+    --parallaxBg1Margin: 500vw;
+    --parallaxBg1ImageSize: 100%; /* contain */
+    --parallaxBg1: url('./assets/background-1.png');
+    --parallaxBg1Left: 16%;
+    --parallaxBg1Bottom: 8%;
+    --parallaxBg2Opacity: 1;
+    --parallaxBg2Margin: 500vw;
+    --parallaxBg2ImageSize: 100%; /* contain */
+    --parallaxBg2: url('./assets/background-2.png');
+    --parallaxBg2Left: 18%;
+    --parallaxBg2Bottom: 10%;
+    --parallaxBg3Opacity: 1;
+    --parallaxBg3Margin: 500vw;
+    --parallaxBg3ImageSize: 100%; /* contain */
+    --parallaxBg3: url('./assets/background-3.png');
+    --parallaxBg3Left: 21%;
+    --parallaxBg3Bottom: 12%;
+    --parallaxColor1: drop-shadow(-500vw 0px #818181);
+    --parallaxColor2: drop-shadow(-500vw 0px #656565);
+    --parallaxColor3: drop-shadow(-500vw 0px #494949);
+    
+    /* DEPTH ELEMENTS */
+    --backgroundDepth: 1;
+    --mediaDepth: 2;
+    --parallax3Depth: 3;
+    --parallax2Depth: 4;
+    --visualizerDepth: 5;
+    --parallax1Depth: 6;
+    --characterDepth: 7;
+    --widgetsDepth: 8;
+}
+
+@font-face {
+    font-family: 'Odibee Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Odibee Sans'), local('OdibeeSans'), url(./assets/neIPzCSooYAho6WvjeToRbk1cJA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background: var(--bgColor);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Odibee Sans";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#secondary_background {
+    width: 100vw;
+    height: 100vh;
+    background: var(--bgImage);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px) brightness(1.2) saturate(1.5);
+}
+
+#parallax {
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    pointer-events: all !important;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(var(--bgFilter));
+    background: var(--bgImage);
+    pointer-events: none;
+    background-size: var(--bgSize);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: var(--backgroundDepth) !important;
+}
+#background_parallax_layer_1 {
+    width: 100%;
+    height: 100%;
+    opacity: var(--parallaxBg1Opacity);
+    left: var(--parallaxBg1Left) !important;
+    top: var(--parallaxBg1Bottom)!important;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: var(--parallax1Depth) !important;
+}
+#background_parallax_layer_1 > .image {
+    background-image: var(--parallaxBg1);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: var(--parallaxBg1ImageSize);
+    pointer-events: none;
+    margin-left: var(--parallaxBg1Margin);
+    filter: var(--parallaxColor1);
+}
+#background_parallax_layer_2 {
+    width: 100%;
+    height: 100%;
+    opacity: var(--parallaxBg2Opacity);
+    left: var(--parallaxBg2Left) !important;
+    top: var(--parallaxBg2Bottom) !important;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: var(--parallax2Depth) !important;
+}
+#background_parallax_layer_2 > .image {
+    background-image: var(--parallaxBg2);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: var(--parallaxBg2ImageSize);
+    pointer-events: none;
+    margin-left: var(--parallaxBg2Margin);
+    filter: var(--parallaxColor2);
+}
+#background_parallax_layer_3 {
+    width: 100%;
+    height: 100%;
+    opacity: var(--parallaxBg3Opacity);
+    left: var(--parallaxBg3Left) !important;
+    top: var(--parallaxBg3Bottom) !important;
+    pointer-events: none;
+    z-index: var(--parallax3Depth) !important;
+}
+#background_parallax_layer_3 > .image {
+    background-image: var(--parallaxBg3);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: var(--parallaxBg3ImageSize);
+    pointer-events: none;
+    margin-left: var(--parallaxBg3Margin);
+    filter: var(--parallaxColor3);
+}
+
+#visualizer {
+    width: 100%;
+    height: 100%;
+    display: var(--visualizerDisplay) !important;
+    flex-direction: row;
+    justify-content: left;
+    align-items: end;
+    position: absolute;
+    pointer-events: none;
+    left: var(--visualizerX) !important;
+    z-index: var(--visualizerDepth) !important;
+}
+
+#audio_canvas {
+    transform: var(--visualizerRotation) !important;
+    margin-bottom: var(--visualizerY) !important;
+}
+
+#media {
+    display: var(--mediaDisplay) !important;
+    position: absolute;
+    z-index: var(--mediaDepth) !important;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    
+}
+
+#media_canvas {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: var(--mediaY) !important;
+    left: var(--mediaX) !important;
+    transform: var(--mediaRotation) !important;
+}
+
+#character {
+    z-index: var(--characterDepth) !important;
+    width: 100%;
+    position: absolute;
+    top: var(--charBottom) !important;
+    height: 100%;
+    pointer-events: none;
+    left: var(--charLeft) !important;
+}
+
+#character > .image {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: var(--charImage);
+    background-size: var(--charSize);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    transform: var(--charInvert) !important;
+}
+
+#shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: var(--charShadowDisplay) !important;
+    top: var(--charShadowBottom) !important;
+    left: var(--charShadowLeft) !important;
+}
+
+#shadow > .image {
+    width: 100%;
+    height: 100%;
+    background-image: var(--charImage);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    margin-left: var(--charShadowMargin);
+    filter: var(--charShadowDrop);
+    background-size: var(--charSize);
+    transform: var(--charInvert) !important;
+}
+/*
+    ------------------
+    INFORMATION PANEL
+    ------------------
+*/
+
+.blur {
+    border: solid;
+    background-color: var(--sidebgColor);
+    backdrop-filter: var(--sidebgFilter);
+    border-width: var(--sideBorderWidth);
+    border-radius: var(--sideBorderRadius);
+    border-color: var(--sideBorderColor);
+}
+
+#drag-icon, #rotate-icon, #success-icon, #clipboard-icon {
+    background-color: var(--font1);
+    border: 1px solid var(--schemeColor);
+    border-radius: 6px; 
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    outline: 20px solid transparent;
+}
+
+#drag-icon {
+    left: -38px;
+    top: -38px;
+}
+
+#rotate-icon {
+    right: -38px;
+    top: -38px;
+}
+
+#success-icon {
+    bottom: -38px;
+    left: -38px;
+}
+
+#clipboard-icon {
+    bottom: -38px;
+    right: -38px;
+}
+
+.draggeable svg {
+    display: block;
+    margin-left: 4.5px;
+    margin-top: 5px;
+    transform: scale(1.2);
+    fill: var(--schemeColor);
+}
+
+#clipboard-icon svg {
+    margin-top: 7px;
+    margin-left: 7.5px;
+}
+
+.dragging {
+    outline: 1px solid var(--schemeColor);
+    outline-style: dashed;
+}
+
+#sidebar {
+    position: absolute;
+    z-index: var(--widgetsDepth) !important;
+    float: left;
+    font-size: 4vh;
+    margin-left: 48px;
+    margin-top: 48px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex !important;
+    flex-direction: column;
+    gap: 1%;
+}
+
+#dateContainer {
+    position: relative;
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+    max-width: fit-content;
+    left: var(--dateLeft);
+    bottom: var(--dateBottom);
+    display: Var(--dateDisplay);
+    transform: rotate(var(--dateRotation));
+}
+
+#dateContainer span {
+    color: var(--schemeColor);
+}
+
+#calendarContainer {
+    position: relative;
+    width: fit-content;
+    left: var(--calendarLeft);
+    bottom: var(--calendarBottom);
+    display: Var(--calendarDisplay);
+    transform: rotate(var(--calendarRotation));
+}
+
+#calendar {
+    text-align: center;
+    font-size: 0.5em;
+    padding: 5px 10px;
+    padding-left: 8px;
+}
+
+#calendar th {
+    color: var(--schemeColor);
+}
+
+#calendar td {
+    color: var(--font2);
+}
+
+#calendar tr:first-child {
+    font-weight: bold;
+    color: var(--schemeColor);
+    background-color: transparent;
+}
+
+#calendar tr td {
+    padding: 0.2em;
+}
+
+#calendar .past {
+    color: var(--font1);
+}
+
+#calendar .today {
+    color: var(--schemeColor);
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+#calendar.spacing {
+    margin-top: 99px;
+}
+
+#timeContainer {
+    position: relative;
+    max-width: fit-content;
+    padding: 5px 10px;
+    padding-top: 9px;
+    left: var(--timeLeft);
+    bottom: var(--timeBottom);
+    display: Var(--timeDisplay);
+    transform: rotate(var(--timeRotation));
+}
+
+#time {
+    display: inline-block;
+    font-size: 1em;
+    color: var(--schemeColor);
+}
+
+#weatherContainer {
+    position: relative;
+    max-width: fit-content;
+    padding: 20px 14px;
+    left: var(--weatherLeft);
+    bottom: var(--weatherBottom);
+    display: Var(--weatherDisplay);
+    transform: rotate(var(--weatherRotation));
+}
+
+#weather {
+    margin-top: 8px;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    color: var(--font1);
+}
+
+#weather tr td:last-child {
+    padding-left: 28px;
+    letter-spacing: 0px;
+    text-align: right;
+}
+
+#weatherTitle {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: var(--schemeColor);
+}
+
+#weatherTitle span {
+    margin-left: 0.6em;
+    color: var(--font2);
+    font-size: 0.8em;
+}
+
+#weatherTitle span i {
+    margin-right: 0.25em;
+}
+
+#weatherCurrent {
+    display: block;
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    color: var(--font2);
+}
+
+#weatherCity {
+    display: none;
+    align-items: center;
+    font-size: 0.5em;
+    margin-top: 0.6em;
+    opacity: 0.8;
+    color: var(--font1);
+}
+
+#weatherCity i {
+    font-size: 1.4em;
+    margin-right: 0.3em;
+}
+
+#weatherCity span {
+    margin-top: 0.1em;
+}
+
+#scheduleNotesContainer {
+    position: relative;
+    width: fit-content;
+    padding: 20px 14px;
+    left: var(--scheduleLeft);
+    bottom: var(--scheduleBottom);
+    transform: rotate(var(--scheduleRotation));
+}
+
+#scheduleTitle {
+    display: var(--scheduleDisplay);
+    font-size: 0.9em;
+    color: var(--schemeColor);
+    letter-spacing: 1px;
+}
+
+#schedule {
+    display: var(--scheduleDisplay);
+    min-width: fit-content;
+    margin-left: 10px;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    color: var(--font1);
+    margin-bottom: var(--scheduleNotesSeparator);
+}
+
+.current td:first-child {
+    color: var(--schemeColor);
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.current td:last-child {
+    color: var(--font2);
+}
+
+#notes {
+    margin-left: 10px;
+    font-size: 0.5em;
+    color: var(--font1);
+    letter-spacing: 2px;
+    display: var(--notesDisplay);
+}
+
+#notes a {
+    padding: 3px 0px;
+}
+
+#notes u {
+    color: var(--schemeColor);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+/*
+    ------
+    ALERTS
+    ------
+*/
+.alerts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.alerts_container {
+    display: inline-block;
+    border: 1px solid var(--schemecolor);
+    background-color: #2f2f2f;
+    color: var(--font1);
+    padding: 20px 20px;
+    height: min-content;
+    font-size: 26px;
+    margin: 20px 60px;
+    max-width: 720px;
+}
+.close_alert {
+    float: right;
+    transform: scaleY(0.7);
+    font-size: 38px;
+    margin-top: -10px;
+    transition: color 0.2s ease-in-out;
+}
+.close_alert:hover {
+    color: var(--schemeColor);
+}
+.alert_container a {
+    display: block;
+}
+.title_alert {
+    margin-bottom: 30px;
+    color: var(--schemeColor);
+    font-weight: bold;
+}
+.alert_container dt {
+    color: var(--schemeColor);
+}
+.alert_container .small {
+    font-size: 21px;
+}
+.error_alert {
+    padding: 20px;
+    display: block;
+    font-size: 21px;
+}

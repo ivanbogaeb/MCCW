@@ -1,0 +1,1398 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "[h1][MCCW] Minimal Customizable Character Wallpaper[/h1]\r\n[hr]\r\n[h2]Features:[/h2]\r\n[list]\r\n    [*] Media Integration.\r\n    [*] Audio Responsive.\r\n    [*] Calendar.\r\n    [*] Clock.\r\n    [*] Weather.\r\n    [*] Schedule.\r\n    [*] Notes.\r\n    [*] Customizable.\r\n    [*] Parallax effect.\r\n    [*] Depth\r\n[/list]",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"_24hsformat" : 
+			{
+				"condition" : "displayClock.value",
+				"index" : 30,
+				"order" : 130,
+				"text" : "24hs Format",
+				"type" : "bool",
+				"value" : false
+			},
+			"accentColor1" : 
+			{
+				"index" : 8,
+				"order" : 108,
+				"text" : "Accent Color",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"audiobarsamount" : 
+			{
+				"fraction" : false,
+				"index" : 55,
+				"max" : 127,
+				"min" : 0,
+				"order" : 155,
+				"text" : "Audio Bars",
+				"type" : "slider",
+				"value" : 127
+			},
+			"audiobarsspread" : 
+			{
+				"fraction" : false,
+				"index" : 58,
+				"max" : 50,
+				"min" : 0,
+				"order" : 158,
+				"text" : "Bars Spread",
+				"type" : "slider",
+				"value" : 5
+			},
+			"audiobarswidth" : 
+			{
+				"fraction" : false,
+				"index" : 57,
+				"max" : 10,
+				"min" : 1,
+				"order" : 157,
+				"text" : "Bars Width",
+				"type" : "slider",
+				"value" : 5
+			},
+			"audiovisualizeradvancedsettings" : 
+			{
+				"condition" : "audiovisualizeradvancedsettings.value ? audiovisualizeradvancedsettings.text = audiovisualizeradvancedsettings.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : audiovisualizeradvancedsettings.text = audiovisualizeradvancedsettings.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 63,
+				"order" : 163,
+				"text" : "<span class='ugcDanger'>Audio Visualizer Advanced Settings</span>",
+				"type" : "bool",
+				"value" : false
+			},
+			"audiovisualizermovex" : 
+			{
+				"condition" : "audiovisualizeradvancedsettings.value",
+				"fraction" : true,
+				"index" : 64,
+				"max" : 100,
+				"min" : -100,
+				"order" : 164,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Right - Left",
+				"type" : "slider",
+				"value" : 0
+			},
+			"audiovisualizermovey" : 
+			{
+				"condition" : "audiovisualizeradvancedsettings.value",
+				"fraction" : true,
+				"index" : 65,
+				"max" : 100,
+				"min" : -100,
+				"order" : 165,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Down - Top",
+				"type" : "slider",
+				"value" : 1.5
+			},
+			"audiovisualizerrotation" : 
+			{
+				"condition" : "audiovisualizeradvancedsettings.value",
+				"fraction" : true,
+				"index" : 66,
+				"max" : 360,
+				"min" : -360,
+				"order" : 166,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Rotation (Deg)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"audiovisualizershadowblur" : 
+			{
+				"condition" : "",
+				"fraction" : false,
+				"index" : 54,
+				"max" : 10,
+				"min" : 0,
+				"order" : 154,
+				"text" : "Shadow Blur",
+				"type" : "slider",
+				"value" : 2
+			},
+			"audiovisualizershadowcolor" : 
+			{
+				"condition" : "",
+				"index" : 53,
+				"order" : 153,
+				"text" : "Shadow",
+				"type" : "color",
+				"value" : "0.2235294117647059 0.00392156862745098 0.00392156862745098"
+			},
+			"backgroundColor" : 
+			{
+				"index" : 44,
+				"order" : 144,
+				"text" : "Solid Color",
+				"type" : "color",
+				"value" : "0.14901960784313725 0.14901960784313725 0.1450980392156863"
+			},
+			"background_depth" : 
+			{
+				"fraction" : false,
+				"index" : 92,
+				"max" : 8,
+				"min" : 0,
+				"order" : 192,
+				"text" : "Background Depth",
+				"type" : "slider",
+				"value" : 1
+			},
+			"background_image_subtext" : 
+			{
+				"index" : 46,
+				"order" : 146,
+				"text" : "<span class='ugcSub'>(All types of images including GIFs are supported, check the guide for more details about animated backgrounds)</span><br>"
+			},
+			"background_parallax_depth" : 
+			{
+				"fraction" : true,
+				"index" : 87,
+				"max" : 1,
+				"min" : 0,
+				"order" : 187,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Background Parallax",
+				"type" : "slider",
+				"value" : 0
+			},
+			"backgroundalignment" : 
+			{
+				"condition" : "backgroundimage.value",
+				"index" : 48,
+				"options" : 
+				[
+					{
+						"label" : "Contain",
+						"value" : "0"
+					},
+					{
+						"label" : "Cover",
+						"value" : "1"
+					}
+				],
+				"order" : 148,
+				"text" : "Background Alignment",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"backgroundblur" : 
+			{
+				"condition" : "backgroundimage.value",
+				"fraction" : true,
+				"index" : 47,
+				"max" : 30,
+				"min" : 0,
+				"order" : 147,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Background Blur",
+				"type" : "slider",
+				"value" : 0
+			},
+			"backgroundgroup" : 
+			{
+				"index" : 43,
+				"order" : 143,
+				"text" : "🖼️ Background",
+				"type" : "group",
+				"value" : ""
+			},
+			"backgroundimage" : 
+			{
+				"index" : 45,
+				"order" : 145,
+				"text" : "Image",
+				"type" : "file",
+				"value" : ""
+			},
+			"boldtitles" : 
+			{
+				"condition" : "textfont.value == 1",
+				"index" : 24,
+				"order" : 124,
+				"text" : "Bold Titles",
+				"type" : "bool",
+				"value" : false
+			},
+			"brh4layer1h4hr" : 
+			{
+				"index" : 101,
+				"order" : 201,
+				"text" : "<br><h4>🖼️ LAYER 2</h4><hr>"
+			},
+			"brh4layer2h4hr" : 
+			{
+				"index" : 93,
+				"order" : 193,
+				"text" : "<br><h4>🖼️ LAYER 1</h4><hr>"
+			},
+			"brh4layer3h4hr" : 
+			{
+				"index" : 109,
+				"order" : 209,
+				"text" : "<br><h4>🖼️ LAYER 3</h4><hr>"
+			},
+			"character_depth" : 
+			{
+				"fraction" : false,
+				"index" : 90,
+				"max" : 8,
+				"min" : 0,
+				"order" : 190,
+				"text" : "Character Depth",
+				"type" : "slider",
+				"value" : 7
+			},
+			"character_parallax_depth" : 
+			{
+				"fraction" : true,
+				"index" : 85,
+				"max" : 1,
+				"min" : 0,
+				"order" : 185,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Character Parallax",
+				"type" : "slider",
+				"value" : 0.2
+			},
+			"charactergroup" : 
+			{
+				"index" : 67,
+				"order" : 167,
+				"text" : "🥰 Character",
+				"type" : "group",
+				"value" : ""
+			},
+			"displayCalendar" : 
+			{
+				"condition" : "displayCalendar.value ? displayCalendar.text = displayCalendar.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : displayCalendar.text = displayCalendar.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 25,
+				"order" : 125,
+				"text" : "<span class='ugcDanger'>📅 Calendar (Disabled)</span>",
+				"type" : "bool",
+				"value" : true
+			},
+			"displayClock" : 
+			{
+				"condition" : "displayClock.value ? displayClock.text = displayClock.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : displayClock.text = displayClock.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 29,
+				"order" : 129,
+				"text" : "<span class='ugcDanger'>⏰ Clock (Disabled)</span>",
+				"type" : "bool",
+				"value" : true
+			},
+			"displayNotes" : 
+			{
+				"condition" : "displayNotes.value ? displayNotes.text = displayNotes.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : displayNotes.text = displayNotes.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 42,
+				"order" : 142,
+				"text" : "<span class='ugcDanger'>📝 Notes (Disabled)</span>",
+				"type" : "bool",
+				"value" : true
+			},
+			"displaySchedule" : 
+			{
+				"condition" : "displaySchedule.value ? displaySchedule.text = displaySchedule.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : displaySchedule.text = displaySchedule.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 38,
+				"order" : 138,
+				"text" : "<span class='ugcDanger'>📖 Schedule (Disabled)</span>",
+				"type" : "bool",
+				"value" : true
+			},
+			"display_media" : 
+			{
+				"index" : 50,
+				"order" : 150,
+				"text" : "Display Media",
+				"type" : "bool",
+				"value" : true
+			},
+			"display_vis" : 
+			{
+				"index" : 51,
+				"order" : 151,
+				"text" : "Display Visualizer",
+				"type" : "bool",
+				"value" : true
+			},
+			"displaydate" : 
+			{
+				"condition" : "displaydate.value ? displaydate.text = displaydate.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : displaydate.text = displaydate.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 19,
+				"order" : 119,
+				"text" : "<span class='ugcDanger'>📅 Date (Disabled)</span>",
+				"type" : "bool",
+				"value" : true
+			},
+			"displayshadow" : 
+			{
+				"index" : 73,
+				"order" : 173,
+				"text" : "Display Shadow",
+				"type" : "bool",
+				"value" : true
+			},
+			"displayweather" : 
+			{
+				"condition" : "displayweather.value ? displayweather.text = displayweather.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : displayweather.text = displayweather.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 34,
+				"order" : 134,
+				"text" : "<span class='ugcDanger'>🌤️ Weather (Disabled)</span>",
+				"type" : "bool",
+				"value" : true
+			},
+			"fontfamily" : 
+			{
+				"condition" : "textfont.value == 1",
+				"index" : 23,
+				"order" : 123,
+				"text" : "Font Family",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"fonturl" : 
+			{
+				"condition" : "textfont.value == 1",
+				"index" : 18,
+				"order" : 118,
+				"text" : "Font URL",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"layer_1_depth" : 
+			{
+				"fraction" : false,
+				"index" : 97,
+				"max" : 8,
+				"min" : 0,
+				"order" : 197,
+				"text" : "Depth",
+				"type" : "slider",
+				"value" : 6
+			},
+			"layer_1_parallax_depth" : 
+			{
+				"fraction" : true,
+				"index" : 98,
+				"max" : 1,
+				"min" : 0,
+				"order" : 198,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Parallax",
+				"type" : "slider",
+				"value" : 0.25
+			},
+			"layer_2_depth" : 
+			{
+				"fraction" : false,
+				"index" : 105,
+				"max" : 8,
+				"min" : 0,
+				"order" : 205,
+				"text" : "Depth",
+				"type" : "slider",
+				"value" : 4
+			},
+			"layer_2_parallax_depth" : 
+			{
+				"fraction" : true,
+				"index" : 106,
+				"max" : 1,
+				"min" : 0,
+				"order" : 206,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Parallax",
+				"type" : "slider",
+				"value" : 0.45
+			},
+			"layer_3_depth" : 
+			{
+				"fraction" : false,
+				"index" : 113,
+				"max" : 8,
+				"min" : 0,
+				"order" : 213,
+				"text" : "Depth",
+				"type" : "slider",
+				"value" : 3
+			},
+			"layer_3_parallax_depth" : 
+			{
+				"fraction" : true,
+				"index" : 114,
+				"max" : 1,
+				"min" : 0,
+				"order" : 214,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Parallax",
+				"type" : "slider",
+				"value" : 0.65
+			},
+			"manuallayercoloring" : 
+			{
+				"condition" : "!parallaxuseimages.value",
+				"index" : 81,
+				"order" : 181,
+				"text" : "Manual Layer Coloring",
+				"type" : "bool",
+				"value" : false
+			},
+			"maxheight" : 
+			{
+				"condition" : "",
+				"index" : 56,
+				"max" : 600,
+				"min" : 0,
+				"order" : 156,
+				"text" : "Bars Height",
+				"type" : "slider",
+				"value" : 280
+			},
+			"media_depth" : 
+			{
+				"fraction" : false,
+				"index" : 88,
+				"max" : 8,
+				"min" : 0,
+				"order" : 188,
+				"text" : "Media Depth",
+				"type" : "slider",
+				"value" : 2
+			},
+			"media_parallax_depth" : 
+			{
+				"fraction" : true,
+				"index" : 82,
+				"max" : 1,
+				"min" : 0,
+				"order" : 182,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Media Parallax",
+				"type" : "slider",
+				"value" : 0.4
+			},
+			"mediagroup" : 
+			{
+				"index" : 49,
+				"order" : 149,
+				"text" : "🎶 Media & Visualizer",
+				"type" : "group",
+				"value" : ""
+			},
+			"newproperty" : 
+			{
+				"index" : 78,
+				"order" : 178,
+				"text" : "📐 Parallax Layers",
+				"type" : "group",
+				"value" : ""
+			},
+			"onlinefeaturesgroup" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "🌤️ Weather",
+				"type" : "group",
+				"value" : ""
+			},
+			"parallax_layer_1_color" : 
+			{
+				"condition" : "!parallax_layer_1_image.value && manuallayercoloring.value && !parallaxuseimages.value",
+				"index" : 95,
+				"order" : 195,
+				"text" : "Color",
+				"type" : "color",
+				"value" : "0.5058823529411764 0.5058823529411764 0.5058823529411764"
+			},
+			"parallax_layer_1_image" : 
+			{
+				"condition" : "parallaxuseimages.value",
+				"index" : 94,
+				"order" : 194,
+				"text" : "Image",
+				"type" : "file",
+				"value" : ""
+			},
+			"parallax_layer_1_opacity" : 
+			{
+				"fraction" : true,
+				"index" : 96,
+				"max" : 1,
+				"min" : 0,
+				"order" : 196,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Opacity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"parallax_layer_1_x" : 
+			{
+				"fraction" : true,
+				"index" : 99,
+				"max" : 100,
+				"min" : -100,
+				"order" : 199,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 16
+			},
+			"parallax_layer_1_y" : 
+			{
+				"fraction" : true,
+				"index" : 100,
+				"max" : 100,
+				"min" : -100,
+				"order" : 200,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 8
+			},
+			"parallax_layer_2_color" : 
+			{
+				"condition" : "!parallax_layer_2_image.value && manuallayercoloring.value && !parallaxuseimages.value",
+				"index" : 103,
+				"order" : 203,
+				"text" : "Color",
+				"type" : "color",
+				"value" : "0.396078431372549 0.396078431372549 0.396078431372549"
+			},
+			"parallax_layer_2_image" : 
+			{
+				"condition" : "parallaxuseimages.value",
+				"index" : 102,
+				"order" : 202,
+				"text" : "Image",
+				"type" : "file",
+				"value" : ""
+			},
+			"parallax_layer_2_opacity" : 
+			{
+				"fraction" : true,
+				"index" : 104,
+				"max" : 1,
+				"min" : 0,
+				"order" : 204,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Opacity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"parallax_layer_2_x" : 
+			{
+				"fraction" : true,
+				"index" : 107,
+				"max" : 100,
+				"min" : -100,
+				"order" : 207,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 18
+			},
+			"parallax_layer_2_y" : 
+			{
+				"fraction" : true,
+				"index" : 108,
+				"max" : 100,
+				"min" : -100,
+				"order" : 208,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 10
+			},
+			"parallax_layer_3_color" : 
+			{
+				"condition" : "!parallax_layer_3_image.value && manuallayercoloring.value && !parallaxuseimages.value",
+				"index" : 111,
+				"order" : 211,
+				"text" : "Color",
+				"type" : "color",
+				"value" : "0.28627450980392155 0.28627450980392155 0.28627450980392155"
+			},
+			"parallax_layer_3_image" : 
+			{
+				"condition" : "parallaxuseimages.value",
+				"index" : 110,
+				"order" : 210,
+				"text" : "Image",
+				"type" : "file",
+				"value" : ""
+			},
+			"parallax_layer_3_opacity" : 
+			{
+				"fraction" : true,
+				"index" : 112,
+				"max" : 1,
+				"min" : 0,
+				"order" : 212,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Opacity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"parallax_layer_3_x" : 
+			{
+				"fraction" : true,
+				"index" : 115,
+				"max" : 100,
+				"min" : -100,
+				"order" : 215,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 24
+			},
+			"parallax_layer_3_y" : 
+			{
+				"fraction" : true,
+				"index" : 116,
+				"max" : 100,
+				"min" : -100,
+				"order" : 216,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 12
+			},
+			"parallaxuseimages" : 
+			{
+				"index" : 80,
+				"order" : 180,
+				"text" : "Use Images",
+				"type" : "bool",
+				"value" : false
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"separate0" : 
+			{
+				"index" : 7,
+				"order" : 107,
+				"text" : "⚙️ Widgets",
+				"type" : "group"
+			},
+			"shadow_parallax_depth" : 
+			{
+				"fraction" : true,
+				"index" : 83,
+				"max" : 1,
+				"min" : 0,
+				"order" : 183,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Shadow Parallax",
+				"type" : "slider",
+				"value" : 0.1
+			},
+			"shadowx" : 
+			{
+				"fraction" : true,
+				"index" : 76,
+				"max" : 100,
+				"min" : -100,
+				"order" : 176,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Shadow X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"shadowy" : 
+			{
+				"fraction" : true,
+				"index" : 77,
+				"max" : 100,
+				"min" : -100,
+				"order" : 177,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Shadow Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"sidebarbackgroundblur" : 
+			{
+				"condition" : "",
+				"fraction" : false,
+				"index" : 11,
+				"max" : 100,
+				"min" : 0,
+				"order" : 111,
+				"text" : "Background Blur",
+				"type" : "slider",
+				"value" : 10
+			},
+			"sidebarbackgroundcolor" : 
+			{
+				"condition" : "",
+				"index" : 12,
+				"order" : 112,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"sidebarbackgroundopacity" : 
+			{
+				"condition" : "",
+				"fraction" : true,
+				"index" : 13,
+				"max" : 1,
+				"min" : 0,
+				"order" : 113,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Background Opacity",
+				"type" : "slider",
+				"value" : 0
+			},
+			"sidebarbordercolor" : 
+			{
+				"condition" : "",
+				"index" : 14,
+				"order" : 114,
+				"text" : "Border Color",
+				"type" : "color",
+				"value" : "0.396078431372549 0.396078431372549 0.396078431372549"
+			},
+			"sidebarborderradius" : 
+			{
+				"condition" : "",
+				"fraction" : false,
+				"index" : 16,
+				"max" : 30,
+				"min" : 0,
+				"order" : 116,
+				"text" : "Border Radius",
+				"type" : "slider",
+				"value" : 3
+			},
+			"sidebarborderwidth" : 
+			{
+				"condition" : "",
+				"fraction" : false,
+				"index" : 15,
+				"max" : 20,
+				"min" : 0,
+				"order" : 115,
+				"text" : "Border Width",
+				"type" : "slider",
+				"value" : 0
+			},
+			"spotifyadvancedsettings" : 
+			{
+				"condition" : "spotifyadvancedsettings.value ? spotifyadvancedsettings.text = spotifyadvancedsettings.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : spotifyadvancedsettings.text = spotifyadvancedsettings.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 59,
+				"order" : 159,
+				"text" : "<span class='ugcDanger'>Media Advanced Settings</span>",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifycanvasmovex" : 
+			{
+				"condition" : "spotifyadvancedsettings.value",
+				"fraction" : true,
+				"index" : 62,
+				"max" : 100,
+				"min" : -100,
+				"order" : 162,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Right - Left",
+				"type" : "slider",
+				"value" : 0
+			},
+			"spotifycanvasmovey" : 
+			{
+				"condition" : "spotifyadvancedsettings.value",
+				"fraction" : true,
+				"index" : 61,
+				"max" : 100,
+				"min" : -100,
+				"order" : 161,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Down - Top",
+				"type" : "slider",
+				"value" : 0
+			},
+			"spotifycanvasrotation" : 
+			{
+				"condition" : "spotifyadvancedsettings.value",
+				"fraction" : true,
+				"index" : 60,
+				"max" : 360,
+				"min" : -360,
+				"order" : 160,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Rotation (Deg)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"supportgroup" : 
+			{
+				"index" : 117,
+				"order" : 217,
+				"text" : "❤️ Information",
+				"type" : "group"
+			},
+			"textColor1" : 
+			{
+				"index" : 9,
+				"order" : 109,
+				"text" : "Primary Text",
+				"type" : "color",
+				"value" : "0.3137254901960784 0.3137254901960784 0.3137254901960784"
+			},
+			"textColor2" : 
+			{
+				"index" : 10,
+				"order" : 110,
+				"text" : "Secondary Text",
+				"type" : "color",
+				"value" : "0.7333333333333333 0.7333333333333333 0.7333333333333333"
+			},
+			"textfont" : 
+			{
+				"index" : 17,
+				"options" : 
+				[
+					{
+						"label" : "Default",
+						"value" : "0"
+					},
+					{
+						"label" : "Custom",
+						"value" : "1"
+					}
+				],
+				"order" : 117,
+				"text" : "Font Style",
+				"type" : "combo",
+				"value" : "0"
+			},
+			"tiltedBarColor" : 
+			{
+				"condition" : "!manuallayercoloring.value && !parallaxuseimages.value",
+				"index" : 79,
+				"order" : 179,
+				"text" : "Parallax Layers Color",
+				"type" : "color",
+				"value" : "0.5019607843137255 0.5019607843137255 0.5019607843137255"
+			},
+			"version" : 
+			{
+				"index" : 118,
+				"order" : 218,
+				"text" : "Version: 2.0.2 EOS <span class='ugcSub'> (Changelog in Workshop)</span>"
+			},
+			"visColor" : 
+			{
+				"index" : 52,
+				"order" : 152,
+				"text" : "Color",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"visualizer_depth" : 
+			{
+				"fraction" : false,
+				"index" : 91,
+				"max" : 8,
+				"min" : 0,
+				"order" : 191,
+				"text" : "Visualizer Depth",
+				"type" : "slider",
+				"value" : 4
+			},
+			"visualizer_parallax_depth" : 
+			{
+				"fraction" : true,
+				"index" : 86,
+				"max" : 1,
+				"min" : 0,
+				"order" : 186,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Visualizer Parallax",
+				"type" : "slider",
+				"value" : 0.05
+			},
+			"waifuInvert" : 
+			{
+				"condition" : "waifuSelector.value",
+				"index" : 70,
+				"order" : 170,
+				"text" : "Invert",
+				"type" : "bool",
+				"value" : false
+			},
+			"waifuSelector" : 
+			{
+				"fileType" : "image",
+				"index" : 68,
+				"order" : 168,
+				"text" : "Image",
+				"type" : "file"
+			},
+			"waifuShadowColor" : 
+			{
+				"index" : 74,
+				"order" : 174,
+				"text" : "Shadow Color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"waifuX" : 
+			{
+				"index" : 71,
+				"max" : 100,
+				"min" : -100,
+				"order" : 171,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"waifuY" : 
+			{
+				"index" : 72,
+				"max" : 100,
+				"min" : -100,
+				"order" : 172,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 2
+			},
+			"waifushadowopacity" : 
+			{
+				"fraction" : true,
+				"index" : 75,
+				"max" : 1,
+				"min" : 0,
+				"order" : 175,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Shadow Opacity",
+				"type" : "slider",
+				"value" : 0.35
+			},
+			"waifusize" : 
+			{
+				"condition" : "waifuSelector.value",
+				"index" : 69,
+				"options" : 
+				[
+					{
+						"label" : "Auto",
+						"value" : "auto"
+					},
+					{
+						"label" : "Contain",
+						"value" : "Contain"
+					},
+					{
+						"label" : "95%",
+						"value" : "auto 95%"
+					},
+					{
+						"label" : "90%",
+						"value" : "auto 90%"
+					},
+					{
+						"label" : "85%",
+						"value" : "auto 85%"
+					},
+					{
+						"label" : "80%",
+						"value" : "auto 80%"
+					},
+					{
+						"label" : "75%",
+						"value" : "auto 75%"
+					},
+					{
+						"label" : "70%",
+						"value" : "auto 70%"
+					},
+					{
+						"label" : "65%",
+						"value" : "auto 65%"
+					},
+					{
+						"label" : "60%",
+						"value" : "auto 60%"
+					},
+					{
+						"label" : "55%",
+						"value" : "auto 55%"
+					},
+					{
+						"label" : "50%",
+						"value" : "auto 50%"
+					},
+					{
+						"label" : "40%",
+						"value" : "auto 40%"
+					}
+				],
+				"order" : 169,
+				"text" : "Size",
+				"type" : "combo",
+				"value" : "auto 95%"
+			},
+			"wallofsupporters" : 
+			{
+				"condition" : "wallofsupporterstoggle.value",
+				"index" : 120,
+				"order" : 220,
+				"text" : "<span class='ugcSub'>~ ~</span> Tom <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Christopher <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> 장한윤 <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Chase <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Neikea <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> メJohnWickシ <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Bellflare <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Sleepy <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Subrosa <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Raen <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Mitrik89 <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Tsquid Tsquid <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Luke <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Shmeagull <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Star bravo <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Squ4reCac7us <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Carlos <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Absol <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Ugo <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> zBlueHawk <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Grief <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> CheLMonster <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Loke <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Jesus G. <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Amro A. <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Tay the plush lizard <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Tweety <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> snf404 <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> 0ttomannn <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Rakaniuks <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Biekk <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Rakaniuks <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> guy <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Erik <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Mark <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Aclysia <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Burdybot <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Seifer <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> SpaceBaker <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span>"
+			},
+			"wallofsupporterstoggle" : 
+			{
+				"condition" : "wallofsupporterstoggle.value ? wallofsupporterstoggle.text = wallofsupporterstoggle.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : wallofsupporterstoggle.text = wallofsupporterstoggle.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 119,
+				"order" : 219,
+				"text" : "<span class='ugcDanger'>View Wall of Supporters (Enabled)</span>",
+				"type" : "bool",
+				"value" : false
+			},
+			"warning" : 
+			{
+				"index" : 121,
+				"order" : 221,
+				"text" : "<br>Want a feature or suggest something?<br><span class='ugcSub'>This wallpaper is maintained by the community, any updates, fixes or implementations have to be done through Github by yourself. If you don't know how to code, do not ask me for features, you will be instantly banned, do it yourself.</span><br><br><a href='https://github.com/ivanbogaeb/MMCW'>Wallpaper Github Repository</a>"
+			},
+			"wdigets_depth" : 
+			{
+				"fraction" : false,
+				"index" : 89,
+				"max" : 8,
+				"min" : 0,
+				"order" : 189,
+				"text" : "Wdigets Depth",
+				"type" : "slider",
+				"value" : 8
+			},
+			"weather" : 
+			{
+				"condition" : "weather.value ? weather.text = weather.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : weather.text = weather.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
+				"index" : 1,
+				"order" : 101,
+				"text" : "<span class='ugcDanger'>AccuWeather (Disabled)</span>",
+				"type" : "bool",
+				"value" : false
+			},
+			"weather_api_key" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "API Key",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"weather_api_location" : 
+			{
+				"index" : 3,
+				"order" : 103,
+				"text" : "Location",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"weather_current" : 
+			{
+				"condition" : "weather.value",
+				"index" : 4,
+				"order" : 104,
+				"text" : "‌ ‌‌‌‌ ‌‌ ‌‌‌‌ ‌‌• Current condition",
+				"type" : "bool",
+				"value" : true
+			},
+			"weather_forecast" : 
+			{
+				"condition" : "weather.value",
+				"index" : 5,
+				"order" : 105,
+				"text" : "‌ ‌‌‌‌ ‌‌ ‌‌‌‌ ‌‌• Forecast information",
+				"type" : "bool",
+				"value" : true
+			},
+			"weather_temperature" : 
+			{
+				"condition" : "weather.value",
+				"index" : 6,
+				"options" : 
+				[
+					{
+						"label" : "°C",
+						"value" : "Metric"
+					},
+					{
+						"label" : "°F",
+						"value" : "Imperial"
+					}
+				],
+				"order" : 106,
+				"text" : "‌ ‌‌‌‌ ‌‌ ‌‌‌‌ ‌‌‌‌‌‌‌‌‌‌‌• Temperature",
+				"type" : "combo",
+				"value" : "Metric"
+			},
+			"widget_calendar_rotation" : 
+			{
+				"condition" : "displayCalendar.value",
+				"fraction" : false,
+				"index" : 28,
+				"max" : 360,
+				"min" : -360,
+				"order" : 128,
+				"text" : "Deg",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_calendar_x_pos" : 
+			{
+				"condition" : "displayCalendar.value",
+				"fraction" : true,
+				"index" : 26,
+				"max" : 100,
+				"min" : -100,
+				"order" : 126,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_calendar_y_pos" : 
+			{
+				"condition" : "displayCalendar.value",
+				"fraction" : true,
+				"index" : 27,
+				"max" : 100,
+				"min" : -100,
+				"order" : 127,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_date_rotation" : 
+			{
+				"condition" : "displaydate.value",
+				"fraction" : false,
+				"index" : 22,
+				"max" : 360,
+				"min" : -360,
+				"order" : 122,
+				"text" : "Deg",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_date_x_pos" : 
+			{
+				"condition" : "displaydate.value",
+				"fraction" : true,
+				"index" : 20,
+				"max" : 100,
+				"min" : -100,
+				"order" : 120,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_date_y_pos" : 
+			{
+				"condition" : "displaydate.value",
+				"fraction" : true,
+				"index" : 21,
+				"max" : 100,
+				"min" : -100,
+				"order" : 121,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_schedule_rotation" : 
+			{
+				"condition" : "displaySchedule.value",
+				"fraction" : false,
+				"index" : 41,
+				"max" : 360,
+				"min" : -360,
+				"order" : 141,
+				"text" : "Deg",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_schedule_x_pos" : 
+			{
+				"condition" : "displaySchedule.value",
+				"fraction" : true,
+				"index" : 39,
+				"max" : 100,
+				"min" : -100,
+				"order" : 139,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_schedule_y_pos" : 
+			{
+				"condition" : "displaySchedule.value",
+				"fraction" : true,
+				"index" : 40,
+				"max" : 100,
+				"min" : -100,
+				"order" : 140,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_time_rotation" : 
+			{
+				"condition" : "displayClock.value",
+				"fraction" : false,
+				"index" : 33,
+				"max" : 360,
+				"min" : -360,
+				"order" : 133,
+				"text" : "Deg",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_time_x_pos" : 
+			{
+				"condition" : "displayClock.value",
+				"fraction" : true,
+				"index" : 31,
+				"max" : 100,
+				"min" : -100,
+				"order" : 131,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_time_y_pos" : 
+			{
+				"condition" : "displayClock.value",
+				"fraction" : true,
+				"index" : 32,
+				"max" : 100,
+				"min" : -100,
+				"order" : 132,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_weather_rotation" : 
+			{
+				"condition" : "displayweather.value",
+				"fraction" : false,
+				"index" : 37,
+				"max" : 360,
+				"min" : -360,
+				"order" : 137,
+				"text" : "Deg",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_weather_x_pos" : 
+			{
+				"condition" : "displayweather.value",
+				"fraction" : true,
+				"index" : 35,
+				"max" : 100,
+				"min" : -100,
+				"order" : 135,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_weather_y_pos" : 
+			{
+				"condition" : "displayweather.value",
+				"fraction" : true,
+				"index" : 36,
+				"max" : 100,
+				"min" : -100,
+				"order" : 136,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widgets_parallax_depth" : 
+			{
+				"fraction" : true,
+				"index" : 84,
+				"max" : 1,
+				"min" : 0,
+				"order" : 184,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Widgets Parallax",
+				"type" : "slider",
+				"value" : 0.2
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Anime" ],
+	"title" : "[MCCW] Minimal Customizable Character Wallpaper",
+	"type" : "web",
+	"version" : 58,
+	"visibility" : "public",
+	"workshopid" : "2298673278",
+	"workshopurl" : "steam://url/CommunityFilePage/2298673278"
+}
