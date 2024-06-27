@@ -36,8 +36,8 @@ window.MCCW = {
                 MCCW.widgets.media.start();
                 MCCW.widgets.visualizer.start();
                 MCCW.addons.font.load();
-                //MCCW.widgets.schedule.draw();
-                //MCCW.widgets.notes.draw();
+                MCCW.widgets.schedule.draw();
+                MCCW.widgets.notes.draw();
             };
         },
     },

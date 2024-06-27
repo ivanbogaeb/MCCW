@@ -1,5 +1,29 @@
 window.wallpaperPropertyListener = {
     applyUserProperties: function(properties){
+
+        if (properties.display_message){
+            if (properties.display_message.value){
+                alerts("[MCCW] - Minimal Customizable Character Wallpaper",
+                `
+                <a>v2.0.3 EOS (End of Service) is out!</a>
+                <br>
+                <a>Disclaimer:</a>
+                <ul>
+                    <li>If your wallpaper broke with this update, just edit your preset again instead of complaining and harassing the devs, it takes 5 minutes, mature please.</li>
+                </ul>
+                <a>Patch Notes (20-06-2024):</a>
+                <ul>
+                    <li>Notes and schedule are working now.</li>
+                    <li>Remember to make a backup of your notes and schedule files, otherwise they will be lost every patch.</li>
+                </ul>
+                <a>To disable this message permanently:</a>
+                <ul>
+                    <li>First option under the "♥ Information" section of the properties called "Display Popup", uncheck it.</li>
+                </ul>
+                `)
+            }
+        }
+
         if (properties.weather_api_key){
             if (properties.weather_api_key.value){
                 MCCW.properties.weather.api_key = properties.weather_api_key.value;

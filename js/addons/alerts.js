@@ -20,7 +20,7 @@ var alerts = (title, error) => {
     title_container.classList.add("title_alert");
     title_container.appendChild(document.createTextNode(title));
 
-    let error_container = document.createElement("a");
+    let error_container = document.createElement("div");
     error_container.classList.add("error_alert");
     error_container.innerHTML = error;
 

@@ -593,7 +593,7 @@ async function getCityCode(){
 async function getCurrentWeather(){
     const city = await getCityCode();
     if (city.success){
-        if (Date.now() - 3600000 > weather_widget.cache.current.lastRequest){ // If 1 hour passed
+        if (Date.now() > weather_widget.cache.current.lastRequest){ // If 1 hour passed
         const res = await fetch(
                 `https://dataservice.accuweather.com/currentconditions/v1/${weather_widget.cache.city}?apikey=${weather_widget.cache.api_key}&details=true`,
                 {
@@ -612,7 +612,7 @@ async function getCurrentWeather(){
                         current.isDayTime = data.IsDayTime;
                         current.humidity = data.RelativeHumidity;
 
-                        weather_widget.cache.current.lastRequest = Date.now();
+                        weather_widget.cache.current.lastRequest = Date.now() + (1000 * 60 * 60);
                         // Temperature
                         current.temperature.measure.metric.value = data.Temperature.Metric.Value;
                         current.temperature.measure.imperial.value = data.Temperature.Imperial.Value;
@@ -685,7 +685,7 @@ async function getForecastWeather(){
 
     const city = await getCityCode();
     if (city.success){
-            if ((Date.now() - 14400000) > weather_widget.cache.forecast.lastRequest){
+            if (Date.now() > weather_widget.cache.forecast.lastRequest){
             const res = await fetch(
                 `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${weather_widget.cache.city}?apikey=${weather_widget.cache.api_key}&details=true`,
                 {
@@ -706,7 +706,7 @@ async function getForecastWeather(){
                                 text: data.Headline.Text,
                                 severity: data.Headline.Severity,
                             },
-                            lastRequest: Date.now(),
+                            lastRequest: Date.now() + (1000 * 60 * 60 * 4),
                             days: []
                         }
 
@@ -1095,10 +1095,12 @@ async function drawWeatherForecastWidget(){
                 let currentTime = new Date().getTime(),
                     sunrise = new Date(data.today.sun.rise).getTime(),
                     sunset = new Date(data.today.sun.set).getTime();
-
+                console.log(currentTime, sunrise, sunset);
                 if (currentTime >= sunrise || currentTime < sunset){ // Dawn or day
+                    console.log("today icon", weather_icons[data.today.day.icon])
                     icon.classList.add("wi", "wi-" + weather_icons[data.today.day.icon]);
                 } else if (currentTime >= sunset) { // night
+                    console.log("today icon", weather_icons[data.today.day.icon])
                     icon.classList.add("wi", "wi-" + weather_icons[data.today.night.icon]);
                 }
             } else {

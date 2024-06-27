@@ -1,6 +1,6 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "[h1][MCCW] Minimal Customizable Character Wallpaper[/h1]\r\n[hr]\r\n[h2]Features:[/h2]\r\n[list]\r\n    [*] Media Integration.\r\n    [*] Audio Responsive.\r\n    [*] Calendar.\r\n    [*] Clock.\r\n    [*] Weather.\r\n    [*] Schedule.\r\n    [*] Notes.\r\n    [*] Customizable.\r\n    [*] Parallax effect.\r\n    [*] Depth\r\n[/list]",
+	"description" : "[h1][MCCW] Minimal Customizable Character Wallpaper[/h1]\r\n[hr]\r\n[h2]Features:[/h2]\r\n[list]\r\n    [*] Media Integration.\r\n    [*] Audio Responsive.\r\n    [*] Calendar.\r\n    [*] Clock.\r\n    [*] Weather.\r\n    [*] Schedule.\r\n    [*] Notes.\r\n    [*] Customizable.\r\n    [*] Parallax effect.\r\n    [*] Depth\r\n[/list]\r\n\r\n[h2]Support and questions:[/h2]\r\n\r\nThis wallpaper went under a massive update, from 1.6 to 2.0! Every feature, every line of code has been reworked specifically to include more features and content. If your wallpaper is broken take 5 minutes to adjust it again instead of complaining.\r\n\r\nAnother thing for those who do not understand, writing on my steam profile or adding me as friend to complain about the wallpaper, if you do you will get blocked and your comment will be erased. The wallpaper and service called \"Steroid\" was used to run weather and spotify sync on your wallpaper. It had 200k users, where only less than 30 participated over 4 years and helped me pay for the service I was offering for free, along with custom special updates for what they wanted.\r\n\r\nThis means that it was a massive loss of money for me and the other developers who worked with it, until we got tired and people started harassing us because the wallpaper was \"broken\" after the new update.\r\n\r\nIf you are not one of them, you are not in the right to complain why Steroid is gone. You did not help to support, neither joined the Discord server to know more about the project.\r\n\r\n[b]Why is my wallpaper broken out of nowhere?[/b]\r\n[list]\r\n    [*] Your wallpaper is not \"broken\", it underwent a massive update, the code has been reworked from 1.6 to 2.0, changing how it works, completely. All the features are there, you just have to take 5 minutes of your life and customize it again.\r\n[/list]\r\n\r\n[b]How can I ask for guidance on how to customize the wallpaper?[/b]\r\n[list]\r\n    [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2298723356]Here it is, although it's not fully updated yet[/url]\r\n[/list]\r\n\r\n[b]My schedule and notes are gone, what do I do now?[/b]\r\n[list]\r\n    [*] Write them again and create a backup.\r\n[/list]\r\n\r\n[b]I don't know what the buttons of the properties do, can you help me?[/b]\r\n[list]\r\n    [*] Nope, learn by yourself touching every button, you are not going to destroy the universe by doing a few clicks you can revert by learning how to use Wallpaper Engine.\r\n[/list]",
 	"file" : "index.html",
 	"general" : 
 	{
@@ -316,6 +316,14 @@
 				"index" : 50,
 				"order" : 150,
 				"text" : "Display Media",
+				"type" : "bool",
+				"value" : true
+			},
+			"display_message" : 
+			{
+				"index" : 118,
+				"order" : 218,
+				"text" : "Display Popup",
 				"type" : "bool",
 				"value" : true
 			},
@@ -915,9 +923,9 @@
 			},
 			"version" : 
 			{
-				"index" : 118,
-				"order" : 218,
-				"text" : "Version: 2.0.2 EOS <span class='ugcSub'> (Changelog in Workshop)</span>"
+				"index" : 119,
+				"order" : 219,
+				"text" : "Version: 2.0.3 EOS <span class='ugcSub'> (Changelog in Workshop)</span>"
 			},
 			"visColor" : 
 			{
@@ -1076,23 +1084,23 @@
 			"wallofsupporters" : 
 			{
 				"condition" : "wallofsupporterstoggle.value",
-				"index" : 120,
-				"order" : 220,
+				"index" : 121,
+				"order" : 221,
 				"text" : "<span class='ugcSub'>~ ~</span> Tom <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Christopher <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> 장한윤 <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Chase <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Neikea <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> メJohnWickシ <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Bellflare <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Sleepy <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Subrosa <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Raen <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Mitrik89 <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Tsquid Tsquid <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Luke <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Shmeagull <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Star bravo <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Squ4reCac7us <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Carlos <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Absol <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Ugo <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> zBlueHawk <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Grief <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> CheLMonster <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Loke <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Jesus G. <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Amro A. <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Tay the plush lizard <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Tweety <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> snf404 <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> 0ttomannn <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Rakaniuks <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Biekk <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Rakaniuks <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> guy <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Erik <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Mark <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Aclysia <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Burdybot <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Seifer <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> SpaceBaker <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span>"
 			},
 			"wallofsupporterstoggle" : 
 			{
 				"condition" : "wallofsupporterstoggle.value ? wallofsupporterstoggle.text = wallofsupporterstoggle.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : wallofsupporterstoggle.text = wallofsupporterstoggle.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
-				"index" : 119,
-				"order" : 219,
+				"index" : 120,
+				"order" : 220,
 				"text" : "<span class='ugcDanger'>View Wall of Supporters (Enabled)</span>",
 				"type" : "bool",
 				"value" : false
 			},
 			"warning" : 
 			{
-				"index" : 121,
-				"order" : 221,
+				"index" : 122,
+				"order" : 222,
 				"text" : "<br>Want a feature or suggest something?<br><span class='ugcSub'>This wallpaper is maintained by the community, any updates, fixes or implementations have to be done through Github by yourself. If you don't know how to code, do not ask me for features, you will be instantly banned, do it yourself.</span><br><br><a href='https://github.com/ivanbogaeb/MMCW'>Wallpaper Github Repository</a>"
 			},
 			"wdigets_depth" : 
@@ -1390,8 +1398,8 @@
 	"ratingviolence" : "none",
 	"tags" : [ "Anime" ],
 	"title" : "[MCCW] Minimal Customizable Character Wallpaper",
-	"type" : "web",
-	"version" : 58,
+	"type" : "Web",
+	"version" : 60,
 	"visibility" : "public",
 	"workshopid" : "2298673278",
 	"workshopurl" : "steam://url/CommunityFilePage/2298673278"

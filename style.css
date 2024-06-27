@@ -608,7 +608,7 @@ body {
     background-color: #2f2f2f;
     color: var(--font1);
     padding: 20px 20px;
-    height: min-content;
+    height: fit-content;
     font-size: 26px;
     margin: 20px 60px;
     max-width: 720px;
@@ -618,6 +618,7 @@ body {
     transform: scaleY(0.7);
     font-size: 38px;
     margin-top: -10px;
+    color: var(--font2);
     transition: color 0.2s ease-in-out;
 }
 .close_alert:hover {
@@ -634,11 +635,15 @@ body {
 .alert_container dt {
     color: var(--schemeColor);
 }
-.alert_container .small {
-    font-size: 21px;
-}
+
 .error_alert {
     padding: 20px;
     display: block;
-    font-size: 21px;
+    font-size: 70%;
+    height: fit-content;
+}
+
+.error_alert a {
+    color: var(--font2);
+    display: block;
 }
