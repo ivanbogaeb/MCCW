@@ -26,10 +26,10 @@
 			"audiobarsamount" : 
 			{
 				"fraction" : false,
-				"index" : 55,
+				"index" : 58,
 				"max" : 127,
 				"min" : 0,
-				"order" : 155,
+				"order" : 158,
 				"text" : "Audio Bars",
 				"type" : "slider",
 				"value" : 127
@@ -37,10 +37,10 @@
 			"audiobarsspread" : 
 			{
 				"fraction" : false,
-				"index" : 58,
+				"index" : 61,
 				"max" : 50,
 				"min" : 0,
-				"order" : 158,
+				"order" : 161,
 				"text" : "Bars Spread",
 				"type" : "slider",
 				"value" : 5
@@ -48,10 +48,10 @@
 			"audiobarswidth" : 
 			{
 				"fraction" : false,
-				"index" : 57,
+				"index" : 60,
 				"max" : 10,
 				"min" : 1,
-				"order" : 157,
+				"order" : 160,
 				"text" : "Bars Width",
 				"type" : "slider",
 				"value" : 5
@@ -59,8 +59,8 @@
 			"audiovisualizeradvancedsettings" : 
 			{
 				"condition" : "audiovisualizeradvancedsettings.value ? audiovisualizeradvancedsettings.text = audiovisualizeradvancedsettings.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : audiovisualizeradvancedsettings.text = audiovisualizeradvancedsettings.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
-				"index" : 63,
-				"order" : 163,
+				"index" : 66,
+				"order" : 166,
 				"text" : "<span class='ugcDanger'>Audio Visualizer Advanced Settings</span>",
 				"type" : "bool",
 				"value" : false
@@ -69,10 +69,10 @@
 			{
 				"condition" : "audiovisualizeradvancedsettings.value",
 				"fraction" : true,
-				"index" : 64,
+				"index" : 67,
 				"max" : 100,
 				"min" : -100,
-				"order" : 164,
+				"order" : 167,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Right - Left",
@@ -83,10 +83,10 @@
 			{
 				"condition" : "audiovisualizeradvancedsettings.value",
 				"fraction" : true,
-				"index" : 65,
+				"index" : 68,
 				"max" : 100,
 				"min" : -100,
-				"order" : 165,
+				"order" : 168,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Down - Top",
@@ -97,10 +97,10 @@
 			{
 				"condition" : "audiovisualizeradvancedsettings.value",
 				"fraction" : true,
-				"index" : 66,
+				"index" : 69,
 				"max" : 360,
 				"min" : -360,
-				"order" : 166,
+				"order" : 169,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Rotation (Deg)",
@@ -111,10 +111,10 @@
 			{
 				"condition" : "",
 				"fraction" : false,
-				"index" : 54,
+				"index" : 57,
 				"max" : 10,
 				"min" : 0,
-				"order" : 154,
+				"order" : 157,
 				"text" : "Shadow Blur",
 				"type" : "slider",
 				"value" : 2
@@ -122,16 +122,16 @@
 			"audiovisualizershadowcolor" : 
 			{
 				"condition" : "",
-				"index" : 53,
-				"order" : 153,
+				"index" : 56,
+				"order" : 156,
 				"text" : "Shadow",
 				"type" : "color",
 				"value" : "0.2235294117647059 0.00392156862745098 0.00392156862745098"
 			},
 			"backgroundColor" : 
 			{
-				"index" : 44,
-				"order" : 144,
+				"index" : 47,
+				"order" : 147,
 				"text" : "Solid Color",
 				"type" : "color",
 				"value" : "0.14901960784313725 0.14901960784313725 0.1450980392156863"
@@ -139,27 +139,27 @@
 			"background_depth" : 
 			{
 				"fraction" : false,
-				"index" : 92,
+				"index" : 95,
 				"max" : 8,
 				"min" : 0,
-				"order" : 192,
+				"order" : 195,
 				"text" : "Background Depth",
 				"type" : "slider",
 				"value" : 1
 			},
 			"background_image_subtext" : 
 			{
-				"index" : 46,
-				"order" : 146,
+				"index" : 49,
+				"order" : 149,
 				"text" : "<span class='ugcSub'>(All types of images including GIFs are supported, check the guide for more details about animated backgrounds)</span><br>"
 			},
 			"background_parallax_depth" : 
 			{
 				"fraction" : true,
-				"index" : 87,
+				"index" : 90,
 				"max" : 1,
 				"min" : 0,
-				"order" : 187,
+				"order" : 190,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Background Parallax",
@@ -169,7 +169,7 @@
 			"backgroundalignment" : 
 			{
 				"condition" : "backgroundimage.value",
-				"index" : 48,
+				"index" : 51,
 				"options" : 
 				[
 					{
@@ -181,7 +181,7 @@
 						"value" : "1"
 					}
 				],
-				"order" : 148,
+				"order" : 151,
 				"text" : "Background Alignment",
 				"type" : "combo",
 				"value" : "1"
@@ -190,10 +190,10 @@
 			{
 				"condition" : "backgroundimage.value",
 				"fraction" : true,
-				"index" : 47,
+				"index" : 50,
 				"max" : 30,
 				"min" : 0,
-				"order" : 147,
+				"order" : 150,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Background Blur",
@@ -202,16 +202,16 @@
 			},
 			"backgroundgroup" : 
 			{
-				"index" : 43,
-				"order" : 143,
+				"index" : 46,
+				"order" : 146,
 				"text" : "🖼️ Background",
 				"type" : "group",
 				"value" : ""
 			},
 			"backgroundimage" : 
 			{
-				"index" : 45,
-				"order" : 145,
+				"index" : 48,
+				"order" : 148,
 				"text" : "Image",
 				"type" : "file",
 				"value" : ""
@@ -227,29 +227,29 @@
 			},
 			"brh4layer1h4hr" : 
 			{
-				"index" : 101,
-				"order" : 201,
+				"index" : 104,
+				"order" : 204,
 				"text" : "<br><h4>🖼️ LAYER 2</h4><hr>"
 			},
 			"brh4layer2h4hr" : 
 			{
-				"index" : 93,
-				"order" : 193,
+				"index" : 96,
+				"order" : 196,
 				"text" : "<br><h4>🖼️ LAYER 1</h4><hr>"
 			},
 			"brh4layer3h4hr" : 
 			{
-				"index" : 109,
-				"order" : 209,
+				"index" : 112,
+				"order" : 212,
 				"text" : "<br><h4>🖼️ LAYER 3</h4><hr>"
 			},
 			"character_depth" : 
 			{
 				"fraction" : false,
-				"index" : 90,
+				"index" : 93,
 				"max" : 8,
 				"min" : 0,
-				"order" : 190,
+				"order" : 193,
 				"text" : "Character Depth",
 				"type" : "slider",
 				"value" : 7
@@ -257,10 +257,10 @@
 			"character_parallax_depth" : 
 			{
 				"fraction" : true,
-				"index" : 85,
+				"index" : 88,
 				"max" : 1,
 				"min" : 0,
-				"order" : 185,
+				"order" : 188,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Character Parallax",
@@ -269,8 +269,8 @@
 			},
 			"charactergroup" : 
 			{
-				"index" : 67,
-				"order" : 167,
+				"index" : 70,
+				"order" : 170,
 				"text" : "🥰 Character",
 				"type" : "group",
 				"value" : ""
@@ -302,6 +302,43 @@
 				"type" : "bool",
 				"value" : true
 			},
+			"widget_notes_x_pos" : 
+			{
+				"fraction" : true,
+				"index" : 43,
+				"max" : 100,
+				"min" : -100,
+				"order" : 143,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_notes_y_pos" : 
+			{
+				"fraction" : true,
+				"index" : 44,
+				"max" : 100,
+				"min" : -100,
+				"order" : 144,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"widget_notes_rotation" : 
+			{
+				"fraction" : false,
+				"index" : 45,
+				"max" : 360,
+				"min" : -360,
+				"order" : 145,
+				"text" : "Deg",
+				"type" : "slider",
+				"value" : 0
+			},
 			"displaySchedule" : 
 			{
 				"condition" : "displaySchedule.value ? displaySchedule.text = displaySchedule.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : displaySchedule.text = displaySchedule.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
@@ -313,24 +350,24 @@
 			},
 			"display_media" : 
 			{
-				"index" : 50,
-				"order" : 150,
+				"index" : 53,
+				"order" : 153,
 				"text" : "Display Media",
 				"type" : "bool",
 				"value" : true
 			},
 			"display_message" : 
 			{
-				"index" : 118,
-				"order" : 218,
+				"index" : 121,
+				"order" : 221,
 				"text" : "Display Popup",
 				"type" : "bool",
 				"value" : true
 			},
 			"display_vis" : 
 			{
-				"index" : 51,
-				"order" : 151,
+				"index" : 54,
+				"order" : 154,
 				"text" : "Display Visualizer",
 				"type" : "bool",
 				"value" : true
@@ -346,8 +383,8 @@
 			},
 			"displayshadow" : 
 			{
-				"index" : 73,
-				"order" : 173,
+				"index" : 76,
+				"order" : 176,
 				"text" : "Display Shadow",
 				"type" : "bool",
 				"value" : true
@@ -382,10 +419,10 @@
 			"layer_1_depth" : 
 			{
 				"fraction" : false,
-				"index" : 97,
+				"index" : 100,
 				"max" : 8,
 				"min" : 0,
-				"order" : 197,
+				"order" : 200,
 				"text" : "Depth",
 				"type" : "slider",
 				"value" : 6
@@ -393,10 +430,10 @@
 			"layer_1_parallax_depth" : 
 			{
 				"fraction" : true,
-				"index" : 98,
+				"index" : 101,
 				"max" : 1,
 				"min" : 0,
-				"order" : 198,
+				"order" : 201,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Parallax",
@@ -406,10 +443,10 @@
 			"layer_2_depth" : 
 			{
 				"fraction" : false,
-				"index" : 105,
+				"index" : 108,
 				"max" : 8,
 				"min" : 0,
-				"order" : 205,
+				"order" : 208,
 				"text" : "Depth",
 				"type" : "slider",
 				"value" : 4
@@ -417,10 +454,10 @@
 			"layer_2_parallax_depth" : 
 			{
 				"fraction" : true,
-				"index" : 106,
+				"index" : 109,
 				"max" : 1,
 				"min" : 0,
-				"order" : 206,
+				"order" : 209,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Parallax",
@@ -430,10 +467,10 @@
 			"layer_3_depth" : 
 			{
 				"fraction" : false,
-				"index" : 113,
+				"index" : 116,
 				"max" : 8,
 				"min" : 0,
-				"order" : 213,
+				"order" : 216,
 				"text" : "Depth",
 				"type" : "slider",
 				"value" : 3
@@ -441,10 +478,10 @@
 			"layer_3_parallax_depth" : 
 			{
 				"fraction" : true,
-				"index" : 114,
+				"index" : 117,
 				"max" : 1,
 				"min" : 0,
-				"order" : 214,
+				"order" : 217,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Parallax",
@@ -454,8 +491,8 @@
 			"manuallayercoloring" : 
 			{
 				"condition" : "!parallaxuseimages.value",
-				"index" : 81,
-				"order" : 181,
+				"index" : 84,
+				"order" : 184,
 				"text" : "Manual Layer Coloring",
 				"type" : "bool",
 				"value" : false
@@ -463,10 +500,10 @@
 			"maxheight" : 
 			{
 				"condition" : "",
-				"index" : 56,
+				"index" : 59,
 				"max" : 600,
 				"min" : 0,
-				"order" : 156,
+				"order" : 159,
 				"text" : "Bars Height",
 				"type" : "slider",
 				"value" : 280
@@ -474,10 +511,10 @@
 			"media_depth" : 
 			{
 				"fraction" : false,
-				"index" : 88,
+				"index" : 91,
 				"max" : 8,
 				"min" : 0,
-				"order" : 188,
+				"order" : 191,
 				"text" : "Media Depth",
 				"type" : "slider",
 				"value" : 2
@@ -485,10 +522,10 @@
 			"media_parallax_depth" : 
 			{
 				"fraction" : true,
-				"index" : 82,
+				"index" : 85,
 				"max" : 1,
 				"min" : 0,
-				"order" : 182,
+				"order" : 185,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Media Parallax",
@@ -497,16 +534,16 @@
 			},
 			"mediagroup" : 
 			{
-				"index" : 49,
-				"order" : 149,
+				"index" : 52,
+				"order" : 152,
 				"text" : "🎶 Media & Visualizer",
 				"type" : "group",
 				"value" : ""
 			},
 			"newproperty" : 
 			{
-				"index" : 78,
-				"order" : 178,
+				"index" : 81,
+				"order" : 181,
 				"text" : "📐 Parallax Layers",
 				"type" : "group",
 				"value" : ""
@@ -522,8 +559,8 @@
 			"parallax_layer_1_color" : 
 			{
 				"condition" : "!parallax_layer_1_image.value && manuallayercoloring.value && !parallaxuseimages.value",
-				"index" : 95,
-				"order" : 195,
+				"index" : 98,
+				"order" : 198,
 				"text" : "Color",
 				"type" : "color",
 				"value" : "0.5058823529411764 0.5058823529411764 0.5058823529411764"
@@ -531,8 +568,8 @@
 			"parallax_layer_1_image" : 
 			{
 				"condition" : "parallaxuseimages.value",
-				"index" : 94,
-				"order" : 194,
+				"index" : 97,
+				"order" : 197,
 				"text" : "Image",
 				"type" : "file",
 				"value" : ""
@@ -540,10 +577,10 @@
 			"parallax_layer_1_opacity" : 
 			{
 				"fraction" : true,
-				"index" : 96,
+				"index" : 99,
 				"max" : 1,
 				"min" : 0,
-				"order" : 196,
+				"order" : 199,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Opacity",
@@ -553,10 +590,10 @@
 			"parallax_layer_1_x" : 
 			{
 				"fraction" : true,
-				"index" : 99,
+				"index" : 102,
 				"max" : 100,
 				"min" : -100,
-				"order" : 199,
+				"order" : 202,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "X",
@@ -566,10 +603,10 @@
 			"parallax_layer_1_y" : 
 			{
 				"fraction" : true,
-				"index" : 100,
+				"index" : 103,
 				"max" : 100,
 				"min" : -100,
-				"order" : 200,
+				"order" : 203,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Y",
@@ -579,8 +616,8 @@
 			"parallax_layer_2_color" : 
 			{
 				"condition" : "!parallax_layer_2_image.value && manuallayercoloring.value && !parallaxuseimages.value",
-				"index" : 103,
-				"order" : 203,
+				"index" : 106,
+				"order" : 206,
 				"text" : "Color",
 				"type" : "color",
 				"value" : "0.396078431372549 0.396078431372549 0.396078431372549"
@@ -588,8 +625,8 @@
 			"parallax_layer_2_image" : 
 			{
 				"condition" : "parallaxuseimages.value",
-				"index" : 102,
-				"order" : 202,
+				"index" : 105,
+				"order" : 205,
 				"text" : "Image",
 				"type" : "file",
 				"value" : ""
@@ -597,10 +634,10 @@
 			"parallax_layer_2_opacity" : 
 			{
 				"fraction" : true,
-				"index" : 104,
+				"index" : 107,
 				"max" : 1,
 				"min" : 0,
-				"order" : 204,
+				"order" : 207,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Opacity",
@@ -610,10 +647,10 @@
 			"parallax_layer_2_x" : 
 			{
 				"fraction" : true,
-				"index" : 107,
+				"index" : 110,
 				"max" : 100,
 				"min" : -100,
-				"order" : 207,
+				"order" : 210,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "X",
@@ -623,10 +660,10 @@
 			"parallax_layer_2_y" : 
 			{
 				"fraction" : true,
-				"index" : 108,
+				"index" : 111,
 				"max" : 100,
 				"min" : -100,
-				"order" : 208,
+				"order" : 211,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Y",
@@ -636,8 +673,8 @@
 			"parallax_layer_3_color" : 
 			{
 				"condition" : "!parallax_layer_3_image.value && manuallayercoloring.value && !parallaxuseimages.value",
-				"index" : 111,
-				"order" : 211,
+				"index" : 114,
+				"order" : 214,
 				"text" : "Color",
 				"type" : "color",
 				"value" : "0.28627450980392155 0.28627450980392155 0.28627450980392155"
@@ -645,8 +682,8 @@
 			"parallax_layer_3_image" : 
 			{
 				"condition" : "parallaxuseimages.value",
-				"index" : 110,
-				"order" : 210,
+				"index" : 113,
+				"order" : 213,
 				"text" : "Image",
 				"type" : "file",
 				"value" : ""
@@ -654,10 +691,10 @@
 			"parallax_layer_3_opacity" : 
 			{
 				"fraction" : true,
-				"index" : 112,
+				"index" : 115,
 				"max" : 1,
 				"min" : 0,
-				"order" : 212,
+				"order" : 215,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Opacity",
@@ -667,10 +704,10 @@
 			"parallax_layer_3_x" : 
 			{
 				"fraction" : true,
-				"index" : 115,
+				"index" : 118,
 				"max" : 100,
 				"min" : -100,
-				"order" : 215,
+				"order" : 218,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "X",
@@ -680,10 +717,10 @@
 			"parallax_layer_3_y" : 
 			{
 				"fraction" : true,
-				"index" : 116,
+				"index" : 119,
 				"max" : 100,
 				"min" : -100,
-				"order" : 216,
+				"order" : 219,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Y",
@@ -692,8 +729,8 @@
 			},
 			"parallaxuseimages" : 
 			{
-				"index" : 80,
-				"order" : 180,
+				"index" : 83,
+				"order" : 183,
 				"text" : "Use Images",
 				"type" : "bool",
 				"value" : false
@@ -715,10 +752,10 @@
 			"shadow_parallax_depth" : 
 			{
 				"fraction" : true,
-				"index" : 83,
+				"index" : 86,
 				"max" : 1,
 				"min" : 0,
-				"order" : 183,
+				"order" : 186,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Shadow Parallax",
@@ -728,10 +765,10 @@
 			"shadowx" : 
 			{
 				"fraction" : true,
-				"index" : 76,
+				"index" : 79,
 				"max" : 100,
 				"min" : -100,
-				"order" : 176,
+				"order" : 179,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Shadow X",
@@ -741,10 +778,10 @@
 			"shadowy" : 
 			{
 				"fraction" : true,
-				"index" : 77,
+				"index" : 80,
 				"max" : 100,
 				"min" : -100,
-				"order" : 177,
+				"order" : 180,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Shadow Y",
@@ -822,8 +859,8 @@
 			"spotifyadvancedsettings" : 
 			{
 				"condition" : "spotifyadvancedsettings.value ? spotifyadvancedsettings.text = spotifyadvancedsettings.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : spotifyadvancedsettings.text = spotifyadvancedsettings.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
-				"index" : 59,
-				"order" : 159,
+				"index" : 62,
+				"order" : 162,
 				"text" : "<span class='ugcDanger'>Media Advanced Settings</span>",
 				"type" : "bool",
 				"value" : false
@@ -832,10 +869,10 @@
 			{
 				"condition" : "spotifyadvancedsettings.value",
 				"fraction" : true,
-				"index" : 62,
+				"index" : 65,
 				"max" : 100,
 				"min" : -100,
-				"order" : 162,
+				"order" : 165,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Right - Left",
@@ -846,10 +883,10 @@
 			{
 				"condition" : "spotifyadvancedsettings.value",
 				"fraction" : true,
-				"index" : 61,
+				"index" : 64,
 				"max" : 100,
 				"min" : -100,
-				"order" : 161,
+				"order" : 164,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Down - Top",
@@ -860,10 +897,10 @@
 			{
 				"condition" : "spotifyadvancedsettings.value",
 				"fraction" : true,
-				"index" : 60,
+				"index" : 63,
 				"max" : 360,
 				"min" : -360,
-				"order" : 160,
+				"order" : 163,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Rotation (Deg)",
@@ -872,8 +909,8 @@
 			},
 			"supportgroup" : 
 			{
-				"index" : 117,
-				"order" : 217,
+				"index" : 120,
+				"order" : 220,
 				"text" : "❤️ Information",
 				"type" : "group"
 			},
@@ -915,22 +952,22 @@
 			"tiltedBarColor" : 
 			{
 				"condition" : "!manuallayercoloring.value && !parallaxuseimages.value",
-				"index" : 79,
-				"order" : 179,
+				"index" : 82,
+				"order" : 182,
 				"text" : "Parallax Layers Color",
 				"type" : "color",
 				"value" : "0.5019607843137255 0.5019607843137255 0.5019607843137255"
 			},
 			"version" : 
 			{
-				"index" : 119,
-				"order" : 219,
+				"index" : 122,
+				"order" : 222,
 				"text" : "Version: 2.0.3 EOS <span class='ugcSub'> (Changelog in Workshop)</span>"
 			},
 			"visColor" : 
 			{
-				"index" : 52,
-				"order" : 152,
+				"index" : 55,
+				"order" : 155,
 				"text" : "Color",
 				"type" : "color",
 				"value" : "1 0 0"
@@ -938,10 +975,10 @@
 			"visualizer_depth" : 
 			{
 				"fraction" : false,
-				"index" : 91,
+				"index" : 94,
 				"max" : 8,
 				"min" : 0,
-				"order" : 191,
+				"order" : 194,
 				"text" : "Visualizer Depth",
 				"type" : "slider",
 				"value" : 4
@@ -949,10 +986,10 @@
 			"visualizer_parallax_depth" : 
 			{
 				"fraction" : true,
-				"index" : 86,
+				"index" : 89,
 				"max" : 1,
 				"min" : 0,
-				"order" : 186,
+				"order" : 189,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Visualizer Parallax",
@@ -962,8 +999,8 @@
 			"waifuInvert" : 
 			{
 				"condition" : "waifuSelector.value",
-				"index" : 70,
-				"order" : 170,
+				"index" : 73,
+				"order" : 173,
 				"text" : "Invert",
 				"type" : "bool",
 				"value" : false
@@ -971,35 +1008,35 @@
 			"waifuSelector" : 
 			{
 				"fileType" : "image",
-				"index" : 68,
-				"order" : 168,
+				"index" : 71,
+				"order" : 171,
 				"text" : "Image",
 				"type" : "file"
 			},
 			"waifuShadowColor" : 
 			{
-				"index" : 74,
-				"order" : 174,
+				"index" : 77,
+				"order" : 177,
 				"text" : "Shadow Color",
 				"type" : "color",
 				"value" : "0 0 0"
 			},
 			"waifuX" : 
 			{
-				"index" : 71,
+				"index" : 74,
 				"max" : 100,
 				"min" : -100,
-				"order" : 171,
+				"order" : 174,
 				"text" : "X",
 				"type" : "slider",
 				"value" : 0
 			},
 			"waifuY" : 
 			{
-				"index" : 72,
+				"index" : 75,
 				"max" : 100,
 				"min" : -100,
-				"order" : 172,
+				"order" : 175,
 				"text" : "Y",
 				"type" : "slider",
 				"value" : 2
@@ -1007,10 +1044,10 @@
 			"waifushadowopacity" : 
 			{
 				"fraction" : true,
-				"index" : 75,
+				"index" : 78,
 				"max" : 1,
 				"min" : 0,
-				"order" : 175,
+				"order" : 178,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Shadow Opacity",
@@ -1020,7 +1057,7 @@
 			"waifusize" : 
 			{
 				"condition" : "waifuSelector.value",
-				"index" : 69,
+				"index" : 72,
 				"options" : 
 				[
 					{
@@ -1076,7 +1113,7 @@
 						"value" : "auto 40%"
 					}
 				],
-				"order" : 169,
+				"order" : 172,
 				"text" : "Size",
 				"type" : "combo",
 				"value" : "auto 95%"
@@ -1084,32 +1121,32 @@
 			"wallofsupporters" : 
 			{
 				"condition" : "wallofsupporterstoggle.value",
-				"index" : 121,
-				"order" : 221,
+				"index" : 124,
+				"order" : 224,
 				"text" : "<span class='ugcSub'>~ ~</span> Tom <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Christopher <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> 장한윤 <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Chase <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Neikea <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> メJohnWickシ <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Bellflare <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Sleepy <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Subrosa <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Raen <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Mitrik89 <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Tsquid Tsquid <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Luke <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Shmeagull <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Star bravo <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Squ4reCac7us <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Carlos <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Absol <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Ugo <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> zBlueHawk <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Grief <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> CheLMonster <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Loke <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Jesus G. <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Amro A. <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Tay the plush lizard <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Tweety <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> snf404 <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> 0ttomannn <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Rakaniuks <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Biekk <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Rakaniuks <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> guy <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Erik <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Mark <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Aclysia <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Burdybot <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> Seifer <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span><br><span class='ugcSub'>~ ~</span> SpaceBaker <span class='ugcDanger'>♥</span> <span class='ugcDanger'>♥</span>"
 			},
 			"wallofsupporterstoggle" : 
 			{
 				"condition" : "wallofsupporterstoggle.value ? wallofsupporterstoggle.text = wallofsupporterstoggle.text.replace('Disabled', 'Enabled').replace('ugcDanger','ugcSuccess') : wallofsupporterstoggle.text = wallofsupporterstoggle.text.replace('Enabled', 'Disabled').replace('ugcSuccess','ugcDanger')",
-				"index" : 120,
-				"order" : 220,
+				"index" : 123,
+				"order" : 223,
 				"text" : "<span class='ugcDanger'>View Wall of Supporters (Enabled)</span>",
 				"type" : "bool",
 				"value" : false
 			},
 			"warning" : 
 			{
-				"index" : 122,
-				"order" : 222,
+				"index" : 125,
+				"order" : 225,
 				"text" : "<br>Want a feature or suggest something?<br><span class='ugcSub'>This wallpaper is maintained by the community, any updates, fixes or implementations have to be done through Github by yourself. If you don't know how to code, do not ask me for features, you will be instantly banned, do it yourself.</span><br><br><a href='https://github.com/ivanbogaeb/MMCW'>Wallpaper Github Repository</a>"
 			},
 			"wdigets_depth" : 
 			{
 				"fraction" : false,
-				"index" : 89,
+				"index" : 92,
 				"max" : 8,
 				"min" : 0,
-				"order" : 189,
+				"order" : 192,
 				"text" : "Wdigets Depth",
 				"type" : "slider",
 				"value" : 8
@@ -1380,10 +1417,10 @@
 			"widgets_parallax_depth" : 
 			{
 				"fraction" : true,
-				"index" : 84,
+				"index" : 87,
 				"max" : 1,
 				"min" : 0,
-				"order" : 184,
+				"order" : 187,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Widgets Parallax",
