@@ -530,6 +530,7 @@ body {
 }
 
 #scheduleNotesContainer {
+    display: var(--scheduleDisplay);
     position: relative;
     width: fit-content;
     padding: 20px 14px;
