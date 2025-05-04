@@ -29,6 +29,9 @@
     --scheduleActive: 0;
     --notesDisplay: block;
     --notesActive: 0;
+    --notesLeft: 0px;
+    --notesBottom: 0px;
+    --notesRotation: 0deg;
     --scheduleNotesSeparator: calc(var(--scheduleActive) * var(--notesActive) * 20px);
 
     /* GENERAL SETTINGS */
@@ -529,7 +532,8 @@ body {
     margin-top: 0.1em;
 }
 
-#scheduleNotesContainer {
+#scheduleContainer {
+    display: var(--scheduleDisplay);
     position: relative;
     width: fit-content;
     padding: 20px 14px;
@@ -552,7 +556,6 @@ body {
     font-size: 0.5em;
     letter-spacing: 2px;
     color: var(--font1);
-    margin-bottom: var(--scheduleNotesSeparator);
 }
 
 .current td:first-child {
@@ -567,6 +570,16 @@ body {
     color: var(--font2);
 }
 
+#notesContainer {
+    display: var(--notesDisplay);
+    position: relative;
+    width: fit-content; 
+    padding: 10px 14px;
+    left: var(--notesLeft);
+    bottom: var(--notesBottom);
+    transform: rotate(var(--notesRotation));
+}
+
 #notes {
     margin-left: 10px;
     font-size: 0.5em;
@@ -577,6 +590,7 @@ body {
 
 #notes a {
     padding: 3px 0px;
+    display: block;
 }
 
 #notes u {
@@ -584,6 +598,8 @@ body {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
+    display: inline-block;
+    margin-bottom: 2px;
 }
 
 /*
