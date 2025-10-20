@@ -211,9 +211,16 @@ window.wallpaperPropertyListener = {
                 setCSSRootVariable("--notesActive", "0");
             }
         }
-
-
-       
+        if (properties.widget_notes_x_pos){
+            setCSSRootVariable("--notesLeft", `${properties.widget_notes_x_pos.value}%`);
+        }
+        if (properties.widget_notes_y_pos){
+            setCSSRootVariable("--notesBottom", `${properties.widget_notes_y_pos.value}%`);
+        }
+        if (properties.widget_notes_rotation){
+            setCSSRootVariable("--notesRotation", `${properties.widget_notes_rotation.value}deg`);
+        }
+        
         /*
             PARALLAX & BACKGROUND
         */
